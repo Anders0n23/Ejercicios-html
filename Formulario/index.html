@@ -1,0 +1,50 @@
+<!doctype html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="colores.css" rel="stylesheet">
+    <title>Formulario Básico</title>
+</head>
+<body>
+    <h1>Formulario básico</h1>
+    <form action="/procesar.php" method="post">
+
+        <label for="nombre" style="font-size: 18px;" >Nombre:</label>
+        <input type="text" id="nombre" name="nombre" title="Aqui va tu nombre" placeholder="Escribe tu nombre aquí" required><br><br>
+
+        <label for="correo" style="font-size: 18px;" >Correo:</label>
+        <input type="email" id="correo" name="correo" title="Aqui va tu correo" placeholder="Escribe tu correo aquí" required><br><br>
+
+        <label for="contrasena" style="font-size: 18px;" >Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena"  placeholder="Escribe tu contraseña aquí" required minlength="8" required max="12" 
+        pattern="^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$"
+        title="La contraseña debe contener al menos 1 mayúscula, 1 número y 1 símbolo especial (@$!%*?&). Mínimo 8 caracteres."><br><br>
+
+        <p>Género:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino" >
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <p>Intereses:</p>
+        <input type="checkbox" id="deportes" name="intereses" value="deportes">
+        <label for="deportes">Deportes</label>
+        <input type="checkbox" id="musica" name="intereses" value="musica">
+        <label for="musica">Música</label><br><br>
+
+        <label for="pais" style="font-size: 18px;" >País:</label>
+        <select id="pais" name="pais" required>
+            <option value="">Seleccione un país</option>
+            <option value="mexico">Colombia</option>
+            <option value="espana">Mexico</option>
+            <option value="argentina">Argentina</option>
+        </select><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" title="Aqui va un comentario" placeholder="Deja tu comentario aquí" rows="6" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="Registrarse" style="font-size: 14px;">
+
+    </form>
+</body>
+</html>
