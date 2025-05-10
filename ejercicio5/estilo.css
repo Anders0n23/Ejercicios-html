@@ -1,0 +1,32 @@
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+  background-color: #f0f0f0;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 16px;
+  font-size: 16px;
+  resize: none;
+}
+
+button {
+  background-color: rgb(11, 82, 214);
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}

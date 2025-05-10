@@ -1,0 +1,33 @@
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin: 0;
+  padding-top: 100px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2em;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #02060a;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#contador {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #444;
+}
